@@ -13,6 +13,7 @@
 
 @property (nonatomic, strong) IBOutlet UITextField *textField;
 @property (nonatomic, strong) IBOutlet UITextView *textView;
+@property (nonatomic, strong) IBOutlet UIButton *clearButton;
 
 @end
 
@@ -25,7 +26,10 @@
     self.textField.delegate = self;
     
 }
-
+- (IBAction)clear:(id)sender {
+    self.textField.text = nil;
+    self.textView.text = nil;
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
