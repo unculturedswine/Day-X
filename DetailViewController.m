@@ -41,6 +41,10 @@
 
 - (void)save:(id)sender {
     
+    NSDictionary *entry = @{TitleKey: self.textField.text, TextKey: self.textView.text};
+    [[NSUserDefaults standardUserDefaults] setObject:entry forKey:EntryKey];
+    [[NSUserDefaults standardUserDefaults] synchronize];
+    
 }
 
 - (void)didReceiveMemoryWarning {
