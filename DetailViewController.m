@@ -12,6 +12,8 @@
 @interface DetailViewController ()
 
 @property (nonatomic, strong) IBOutlet UITextField *textField;
+@property (nonatomic, strong) IBOutlet UITextView *textView;
+
 @end
 
 @implementation DetailViewController
