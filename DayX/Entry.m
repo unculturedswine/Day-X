@@ -7,6 +7,7 @@
 //
 
 #import "Entry.h"
+#import "DetailViewController.h";
 
 @implementation Entry
 
@@ -31,6 +32,13 @@
         self.timestamp = dictionary[timestampKey];
     }
     return self;
+}
+
++ (NSMutableArray *)loadEntriesFromDefaults {
+    NSArray *entryDictionaries = [[NSUserDefaults standardUserDefaults] objectForKey:entriesKey];
+}
++ (void)storeEntriesInDefaults:(NSArray *)entries {
+
 }
 
 @end
