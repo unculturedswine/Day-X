@@ -30,6 +30,9 @@
     
     self.textField.delegate = self;
     
+    NSDictionary *entry = [[NSUserDefaults standardUserDefaults] objectForKey:EntryKey];
+    [self updateWithDictionary:entry];
+    
 }
 - (IBAction)clear:(id)sender {
     self.textField.text = nil;
