@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5D0CD1901A6F0A81003ECCD2 /* Entry.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D0CD18F1A6F0A81003ECCD2 /* Entry.m */; };
 		5DB99C001A6E025B00B231CA /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DB99BFE1A6E025B00B231CA /* DetailViewController.m */; };
 		5DB99C011A6E025B00B231CA /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5DB99BFF1A6E025B00B231CA /* DetailViewController.xib */; };
 		711A506A19388095005642EF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 711A506919388095005642EF /* Foundation.framework */; };
@@ -34,6 +35,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5D0CD18E1A6F0A81003ECCD2 /* Entry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Entry.h; sourceTree = "<group>"; };
+		5D0CD18F1A6F0A81003ECCD2 /* Entry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Entry.m; sourceTree = "<group>"; };
 		5DB99BFD1A6E025B00B231CA /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DetailViewController.h; path = ../DetailViewController.h; sourceTree = "<group>"; };
 		5DB99BFE1A6E025B00B231CA /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DetailViewController.m; path = ../DetailViewController.m; sourceTree = "<group>"; };
 		5DB99BFF1A6E025B00B231CA /* DetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = DetailViewController.xib; path = ../DetailViewController.xib; sourceTree = "<group>"; };
@@ -117,6 +120,8 @@
 				5DB99BFD1A6E025B00B231CA /* DetailViewController.h */,
 				5DB99BFE1A6E025B00B231CA /* DetailViewController.m */,
 				5DB99BFF1A6E025B00B231CA /* DetailViewController.xib */,
+				5D0CD18E1A6F0A81003ECCD2 /* Entry.h */,
+				5D0CD18F1A6F0A81003ECCD2 /* Entry.m */,
 				711A507B19388095005642EF /* Images.xcassets */,
 				711A507019388095005642EF /* Supporting Files */,
 			);
@@ -249,6 +254,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5D0CD1901A6F0A81003ECCD2 /* Entry.m in Sources */,
 				711A507A19388095005642EF /* DXAppDelegate.m in Sources */,
 				711A507619388095005642EF /* main.m in Sources */,
 				5DB99C001A6E025B00B231CA /* DetailViewController.m in Sources */,
