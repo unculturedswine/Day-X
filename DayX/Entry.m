@@ -7,7 +7,7 @@
 //
 
 #import "Entry.h"
-#import "DetailViewController.h";
+#import "DetailViewController.h"
 
 @implementation Entry
 
@@ -35,10 +35,22 @@
 }
 
 + (NSMutableArray *)loadEntriesFromDefaults {
-    NSArray *entryDictionaries = [[NSUserDefaults standardUserDefaults] objectForKey:entriesKey];
+    NSArray *entryDictionaries = [[NSUserDefaults standardUserDefaults] objectForKey:EntryKey];
+    NSMutableArray *entries = [NSMutableArray new];
+    for (NSDictionary *entryDictionary in entryDictionaries) {
+        Entry *entry = [[Entry alloc] initWithDictionary:entryDictionary];
+        [entries addObject:entry];
+    }
+    return entries;
 }
 + (void)storeEntriesInDefaults:(NSArray *)entries {
-
+    NSMutableArray *entryDictionaries = [NSMutableArray new];
+    
+    for (Entry *entry in entries) {
+        [entryDictionaries addObject:[entry entryDictionary]];
+    }
+    
+    [[NSUserDefaults standardUserDefaults] setObject:entryDictionaries forKey:EntryKey];
 }
 
 @end
