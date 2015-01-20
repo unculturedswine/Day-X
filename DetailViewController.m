@@ -31,6 +31,18 @@
     self.textView.text = nil;
 }
 
+-(void)textFieldDidEndEditing:(UITextField *)textField {
+    [self save:textField];
+}
+
+-(void)textViewDidChange:(UITextView *)textView {
+    [self save:textView];
+}
+
+- (void)save:(id)sender {
+    
+}
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
@@ -40,6 +52,7 @@
     [textField resignFirstResponder];
     return YES;
 }
+
 
 /*
 #pragma mark - Navigation
