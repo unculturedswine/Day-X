@@ -6,10 +6,12 @@
 //  Copyright (c) 2015 DevMountain. All rights reserved.
 //
 
-#import "DetailViewController.h"
+#import "DetailViewController.h" 
+
 
 @interface DetailViewController ()
 
+@property (nonatomic, strong) IBOutlet UITextField *textField;
 @end
 
 @implementation DetailViewController
@@ -18,12 +20,19 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     
+    self.textField.delegate = self;
     
 }
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+-(BOOL)textFieldShouldReturn:(UITextField *)textField {
+    [textField resignFirstResponder];
+    return YES;
 }
 
 /*
