@@ -19,6 +19,11 @@
 
 @implementation DetailViewController
 
+- (void)updateWithDictionary:(NSDictionary *)dictionary {
+    self.textField.text = dictionary[TitleKey];
+    self.textView.text = dictionary[TextKey];
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
